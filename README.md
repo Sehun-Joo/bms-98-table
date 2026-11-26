@@ -2,6 +2,10 @@
 
 A table of **1,035 Insane BMS charts**, ordered by estimated difficulty of achieving a **98% EX personal best**.
 
+**[Browse the table](https://sehun-joo.github.io/bms-98-table/)** · **[Download the package](https://sehun-joo.github.io/bms-98-table/insane-98-ranges.zip)**
+
+**Table import URL:** `https://sehun-joo.github.io/bms-98-table/`
+
 The table has **68 difficulty-range folders**, averaging **15.2 charts per folder** (9–23). Lower **D98** values are easier. D98 is a fitted player-ability threshold, not a score percentage, BPI, or original star level.
 
 ## Use the table
