@@ -1,0 +1,67 @@
+{
+  "players": 35845,
+  "observations": 7697372,
+  "charts": 1035,
+  "holdout": 1155568,
+  "models": {
+    "shared_slope": {
+      "log_loss": 0.019754368077846918,
+      "brier": 0.005180591576685097,
+      "actual_rate": 0.008588849812386636,
+      "predicted_rate": 0.004800003150175818
+    },
+    "chart_slopes": {
+      "log_loss": 0.015023458558175676,
+      "brier": 0.003880073841830872,
+      "actual_rate": 0.008588849812386636,
+      "predicted_rate": 0.007735891652559926
+    },
+    "target98": {
+      "log_loss": 0.01346551877437076,
+      "brier": 0.0037697444726033542,
+      "actual_rate": 0.008588849812386636,
+      "predicted_rate": 0.008613822952914447
+    },
+    "raw_rate": {
+      "log_loss": 0.04396969196548363,
+      "brier": 0.008368838716013296,
+      "actual_rate": 0.008588849812386636,
+      "predicted_rate": 0.008707445273271124
+    }
+  },
+  "near_target_holdout": 23508,
+  "target98_near_target": {
+    "log_loss": 0.45984024554904523,
+    "brier": 0.147840467194316,
+    "actual_rate": 0.3114258975667858,
+    "predicted_rate": 0.29794172973219757
+  },
+  "near_target_models": {
+    "shared_slope": {
+      "log_loss": 0.7007963557373784,
+      "brier": 0.21079384841991894,
+      "actual_rate": 0.3114258975667858,
+      "predicted_rate": 0.14388874327322396
+    },
+    "chart_slopes": {
+      "log_loss": 0.47960145763009493,
+      "brier": 0.15247722484880977,
+      "actual_rate": 0.3114258975667858,
+      "predicted_rate": 0.2859657110592195
+    },
+    "target98": {
+      "log_loss": 0.45984024554904523,
+      "brier": 0.147840467194316,
+      "actual_rate": 0.3114258975667858,
+      "predicted_rate": 0.29794172973219757
+    },
+    "raw_rate": {
+      "log_loss": 1.2974946276369679,
+      "brier": 0.2969623345596329,
+      "actual_rate": 0.3114258975667858,
+      "predicted_rate": 0.025099006212106104
+    }
+  },
+  "selection_metric": "near-target log loss",
+  "chosen": "target98"
+}

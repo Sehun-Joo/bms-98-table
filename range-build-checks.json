@@ -1,0 +1,12 @@
+{
+  "charts": 1035,
+  "folders": 68,
+  "average": 15.220588235294118,
+  "min": 9,
+  "max": 23,
+  "ordering_unchanged": true,
+  "hashes_preserved": true,
+  "nonoverlapping_contiguous_ranges": true,
+  "base_band_width": 0.05,
+  "target_count": 15
+}

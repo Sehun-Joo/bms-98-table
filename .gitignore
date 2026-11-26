@@ -1,0 +1,8 @@
+*.db
+*.db.gz
+*.npz
+__pycache__/
+.venv/
+venv/
+.env
+.env.*

@@ -1,0 +1,80 @@
+INSANE 98% DIFFICULTY TABLE
+
+1,035 charts, sorted easiest to hardest by estimated 98% EX personal-best difficulty.
+86 folders: 3 folders of 13 charts, 83 folders of 12 charts. Lower numbers are easier.
+This table contains chart references; it does not include song/chart downloads.
+
+USE
+beatoraja / compatible forks: close the game, copy insane-98.bmt into its existing
+table directory, then restart. The table is named "Insane 98% — easiest to hardest".
+Do not replace any existing table files. Compatibility was checked against the
+beatoraja TableData format; the artifact has not been imported into your running game.
+
+Web/GLAssist-style table: index.html, header.json and data.json form a standard
+BMSTable package. Host these three files together and register the index.html URL
+in your table importer. This package has not been publicly hosted.
+
+Read index.html directly in a browser to inspect all ranks and effort indicators.
+rankings.json contains exact model estimates and support counts.
+
+METHOD
+Selected model: target98 (selection criterion: near-target log loss).
+Players used: 35,845; PBs used: 7,697,372.
+Held-out results: 1,155,568; near-target holdout: 23,508.
+Three candidates were evaluated: a shared-slope score model, a chart-specific-slope
+score model, and 98%-specific logistic calibration of the chart-slope model.
+All adjust for player ability estimated from overlapping chart results.
+Selection uses held-out log loss near the target, not training fit.
+See validation.json for both overall and near-target metrics and the raw-rate baseline.
+One 15% holdout was used for model selection; its score is a validation result,
+not an independent final test set or proof that causal selection bias is removed.
+
+Exact target: 100*EX >= 98*maximum_EX. Display percentages are not rounded first.
+Input devices are pooled. Each player contributes one PB per chart, not one row
+per attempt. Accounts with fewer than 10 retained Insane chart results are excluded.
+Flagged cheat records, nonpositive/impossible scores, and records with a nonmodal
+maximum EX score for that chart are excluded. No clear-lamp requirement is imposed.
+
+Latent scoring model: -log((maximum_EX-EX+0.5)/(maximum_EX+0.5)) = chart intercept
++ positive chart slope * player ability + residual. Huber fitting reduces influence
+of abandoned or stale low PBs; ridge penalties stabilize sparse players and slopes.
+Player ability is standardized. Logistic calibration, when selected, estimates
+98%-specific chart thresholds and slopes, regularized toward the score model.
+Chart difficulty is the estimated ability at the 50% 98%-PB achievement point.
+For the score model it is the ability at the modeled score-location crossing 98%.
+Ability units are internal standardized units, not the original star difficulty.
+
+UNCERTAINTY AND PRACTICE
+366 charts are marked provisional: fewer than 100 usable records, fewer
+than 5 recorded 98% achievements, or fewer than 30 players within one ability unit
+of the estimated threshold. 91 charts have no recorded 98% achievement in the
+modeling cohort: their ordering is extrapolated, not evidence of achieved 98%.
+All charts remain in the sorted folders; provisional status is in the readable
+ranking and standard table comments. "Supported" is a count-based support flag,
+not a posterior confidence interval. Small rank differences are not precise.
+
+POPULARITY: total plays / total players is shown as an effort indicator using
+the archive's chart aggregates. Those aggregates are not restricted to the model's
+filtered cohort. Popularity alone is not penalized. Repeated practice may improve
+PBs, even though repeated attempts are not counted as independent observations.
+Complete per-player/chart attempt histories and PB dates are unavailable, so the
+model cannot rank charts under equal practice budgets or predict attempts needed.
+This is a historical PB ranking, not a next-attempt probability or current-skill rating.
+Selection by chart preference, input device, score age, and specialist skill may remain.
+
+SOURCES
+Archive: https://github.com/zkldi/lr2ir-dataset
+Dataset snapshot: May 2026; build date: 2026-11-25 (America/New_York).
+Source compressed SHA256 (verified):
+b8b94d9c67cf94411a71501c3533bd15877bd727fd687c060749fae29267b5cf
+Insane chart membership/hash manifest:
+https://miraiscarlet.github.io/bms/table/genocide_insane/data_insane.json
+Titles and artists come from the archive where available. Original links/hashes
+come from that manifest; link availability was not verified.
+
+REPRODUCE
+The reproduce directory contains the exact script, manifest, and dependency pins.
+Install requirements.txt in a Python environment, then run:
+python build_table.py --db "PATH/TO/lr2ir-archive-v3.db" --out "PATH/TO/new-table"
+The source database is read-only and is not included in this package.
+test_model.py checks recovery with simulated ability-dependent chart selection.

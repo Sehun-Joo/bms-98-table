@@ -1,0 +1,546 @@
+[
+  {
+    "id": "001",
+    "label": "001 | 1.50–2.55",
+    "lower_inclusive": 1.5,
+    "upper_exclusive": 2.55,
+    "count": 14,
+    "provisional": 0
+  },
+  {
+    "id": "002",
+    "label": "002 | 2.55–2.80",
+    "lower_inclusive": 2.55,
+    "upper_exclusive": 2.8,
+    "count": 15,
+    "provisional": 0
+  },
+  {
+    "id": "003",
+    "label": "003 | 2.80–2.95",
+    "lower_inclusive": 2.8,
+    "upper_exclusive": 2.95,
+    "count": 14,
+    "provisional": 0
+  },
+  {
+    "id": "004",
+    "label": "004 | 2.95–3.05",
+    "lower_inclusive": 2.95,
+    "upper_exclusive": 3.05,
+    "count": 12,
+    "provisional": 0
+  },
+  {
+    "id": "005",
+    "label": "005 | 3.05–3.15",
+    "lower_inclusive": 3.05,
+    "upper_exclusive": 3.15,
+    "count": 15,
+    "provisional": 0
+  },
+  {
+    "id": "006",
+    "label": "006 | 3.15–3.25",
+    "lower_inclusive": 3.15,
+    "upper_exclusive": 3.25,
+    "count": 13,
+    "provisional": 0
+  },
+  {
+    "id": "007",
+    "label": "007 | 3.25–3.30",
+    "lower_inclusive": 3.25,
+    "upper_exclusive": 3.3,
+    "count": 12,
+    "provisional": 0
+  },
+  {
+    "id": "008",
+    "label": "008 | 3.30–3.40",
+    "lower_inclusive": 3.3,
+    "upper_exclusive": 3.4,
+    "count": 17,
+    "provisional": 0
+  },
+  {
+    "id": "009",
+    "label": "009 | 3.40–3.50",
+    "lower_inclusive": 3.4,
+    "upper_exclusive": 3.5,
+    "count": 17,
+    "provisional": 0
+  },
+  {
+    "id": "010",
+    "label": "010 | 3.50–3.60",
+    "lower_inclusive": 3.5,
+    "upper_exclusive": 3.6,
+    "count": 20,
+    "provisional": 0
+  },
+  {
+    "id": "011",
+    "label": "011 | 3.60–3.65",
+    "lower_inclusive": 3.6,
+    "upper_exclusive": 3.65,
+    "count": 11,
+    "provisional": 0
+  },
+  {
+    "id": "012",
+    "label": "012 | 3.65–3.70",
+    "lower_inclusive": 3.65,
+    "upper_exclusive": 3.7,
+    "count": 15,
+    "provisional": 0
+  },
+  {
+    "id": "013",
+    "label": "013 | 3.70–3.80",
+    "lower_inclusive": 3.7,
+    "upper_exclusive": 3.8,
+    "count": 18,
+    "provisional": 0
+  },
+  {
+    "id": "014",
+    "label": "014 | 3.80–3.85",
+    "lower_inclusive": 3.8,
+    "upper_exclusive": 3.85,
+    "count": 17,
+    "provisional": 0
+  },
+  {
+    "id": "015",
+    "label": "015 | 3.85–3.90",
+    "lower_inclusive": 3.85,
+    "upper_exclusive": 3.9,
+    "count": 21,
+    "provisional": 0
+  },
+  {
+    "id": "016",
+    "label": "016 | 3.90–3.95",
+    "lower_inclusive": 3.9,
+    "upper_exclusive": 3.95,
+    "count": 13,
+    "provisional": 0
+  },
+  {
+    "id": "017",
+    "label": "017 | 3.95–4.00",
+    "lower_inclusive": 3.95,
+    "upper_exclusive": 4.0,
+    "count": 13,
+    "provisional": 0
+  },
+  {
+    "id": "018",
+    "label": "018 | 4.00–4.05",
+    "lower_inclusive": 4.0,
+    "upper_exclusive": 4.05,
+    "count": 12,
+    "provisional": 0
+  },
+  {
+    "id": "019",
+    "label": "019 | 4.05–4.10",
+    "lower_inclusive": 4.05,
+    "upper_exclusive": 4.1,
+    "count": 15,
+    "provisional": 0
+  },
+  {
+    "id": "020",
+    "label": "020 | 4.10–4.15",
+    "lower_inclusive": 4.1,
+    "upper_exclusive": 4.15,
+    "count": 18,
+    "provisional": 0
+  },
+  {
+    "id": "021",
+    "label": "021 | 4.15–4.20",
+    "lower_inclusive": 4.15,
+    "upper_exclusive": 4.2,
+    "count": 16,
+    "provisional": 0
+  },
+  {
+    "id": "022",
+    "label": "022 | 4.20–4.25",
+    "lower_inclusive": 4.2,
+    "upper_exclusive": 4.25,
+    "count": 16,
+    "provisional": 0
+  },
+  {
+    "id": "023",
+    "label": "023 | 4.25–4.30",
+    "lower_inclusive": 4.25,
+    "upper_exclusive": 4.3,
+    "count": 13,
+    "provisional": 0
+  },
+  {
+    "id": "024",
+    "label": "024 | 4.30–4.35",
+    "lower_inclusive": 4.3,
+    "upper_exclusive": 4.35,
+    "count": 17,
+    "provisional": 0
+  },
+  {
+    "id": "025",
+    "label": "025 | 4.35–4.40",
+    "lower_inclusive": 4.35,
+    "upper_exclusive": 4.4,
+    "count": 13,
+    "provisional": 0
+  },
+  {
+    "id": "026",
+    "label": "026 | 4.40–4.45",
+    "lower_inclusive": 4.4,
+    "upper_exclusive": 4.45,
+    "count": 13,
+    "provisional": 0
+  },
+  {
+    "id": "027",
+    "label": "027 | 4.45–4.50",
+    "lower_inclusive": 4.45,
+    "upper_exclusive": 4.5,
+    "count": 16,
+    "provisional": 0
+  },
+  {
+    "id": "028",
+    "label": "028 | 4.50–4.55",
+    "lower_inclusive": 4.5,
+    "upper_exclusive": 4.55,
+    "count": 12,
+    "provisional": 0
+  },
+  {
+    "id": "029",
+    "label": "029 | 4.55–4.60",
+    "lower_inclusive": 4.55,
+    "upper_exclusive": 4.6,
+    "count": 23,
+    "provisional": 0
+  },
+  {
+    "id": "030",
+    "label": "030 | 4.60–4.65",
+    "lower_inclusive": 4.6,
+    "upper_exclusive": 4.65,
+    "count": 20,
+    "provisional": 0
+  },
+  {
+    "id": "031",
+    "label": "031 | 4.65–4.70",
+    "lower_inclusive": 4.65,
+    "upper_exclusive": 4.7,
+    "count": 16,
+    "provisional": 0
+  },
+  {
+    "id": "032",
+    "label": "032 | 4.70–4.75",
+    "lower_inclusive": 4.7,
+    "upper_exclusive": 4.75,
+    "count": 15,
+    "provisional": 0
+  },
+  {
+    "id": "033",
+    "label": "033 | 4.75–4.80",
+    "lower_inclusive": 4.75,
+    "upper_exclusive": 4.8,
+    "count": 10,
+    "provisional": 0
+  },
+  {
+    "id": "034",
+    "label": "034 | 4.80–4.85",
+    "lower_inclusive": 4.8,
+    "upper_exclusive": 4.85,
+    "count": 15,
+    "provisional": 0
+  },
+  {
+    "id": "035",
+    "label": "035 | 4.85–4.90",
+    "lower_inclusive": 4.85,
+    "upper_exclusive": 4.9,
+    "count": 20,
+    "provisional": 0
+  },
+  {
+    "id": "036",
+    "label": "036 | 4.90–4.95",
+    "lower_inclusive": 4.9,
+    "upper_exclusive": 4.95,
+    "count": 13,
+    "provisional": 0
+  },
+  {
+    "id": "037",
+    "label": "037 | 4.95–5.00",
+    "lower_inclusive": 4.95,
+    "upper_exclusive": 5.0,
+    "count": 17,
+    "provisional": 1
+  },
+  {
+    "id": "038",
+    "label": "038 | 5.00–5.05",
+    "lower_inclusive": 5.0,
+    "upper_exclusive": 5.05,
+    "count": 14,
+    "provisional": 0
+  },
+  {
+    "id": "039",
+    "label": "039 | 5.05–5.15",
+    "lower_inclusive": 5.05,
+    "upper_exclusive": 5.15,
+    "count": 19,
+    "provisional": 1
+  },
+  {
+    "id": "040",
+    "label": "040 | 5.15–5.25",
+    "lower_inclusive": 5.15,
+    "upper_exclusive": 5.25,
+    "count": 16,
+    "provisional": 3
+  },
+  {
+    "id": "041",
+    "label": "041 | 5.25–5.30",
+    "lower_inclusive": 5.25,
+    "upper_exclusive": 5.3,
+    "count": 9,
+    "provisional": 2
+  },
+  {
+    "id": "042",
+    "label": "042 | 5.30–5.35",
+    "lower_inclusive": 5.3,
+    "upper_exclusive": 5.35,
+    "count": 12,
+    "provisional": 3
+  },
+  {
+    "id": "043",
+    "label": "043 | 5.35–5.40",
+    "lower_inclusive": 5.35,
+    "upper_exclusive": 5.4,
+    "count": 13,
+    "provisional": 5
+  },
+  {
+    "id": "044",
+    "label": "044 | 5.40–5.45",
+    "lower_inclusive": 5.4,
+    "upper_exclusive": 5.45,
+    "count": 17,
+    "provisional": 7
+  },
+  {
+    "id": "045",
+    "label": "045 | 5.45–5.50",
+    "lower_inclusive": 5.45,
+    "upper_exclusive": 5.5,
+    "count": 10,
+    "provisional": 5
+  },
+  {
+    "id": "046",
+    "label": "046 | 5.50–5.60",
+    "lower_inclusive": 5.5,
+    "upper_exclusive": 5.6,
+    "count": 18,
+    "provisional": 10
+  },
+  {
+    "id": "047",
+    "label": "047 | 5.60–5.65",
+    "lower_inclusive": 5.6,
+    "upper_exclusive": 5.65,
+    "count": 21,
+    "provisional": 15
+  },
+  {
+    "id": "048",
+    "label": "048 | 5.65–5.75",
+    "lower_inclusive": 5.65,
+    "upper_exclusive": 5.75,
+    "count": 16,
+    "provisional": 12
+  },
+  {
+    "id": "049",
+    "label": "049 | 5.75–5.85",
+    "lower_inclusive": 5.75,
+    "upper_exclusive": 5.85,
+    "count": 14,
+    "provisional": 14
+  },
+  {
+    "id": "050",
+    "label": "050 | 5.85–5.95",
+    "lower_inclusive": 5.85,
+    "upper_exclusive": 5.95,
+    "count": 20,
+    "provisional": 19
+  },
+  {
+    "id": "051",
+    "label": "051 | 5.95–6.05",
+    "lower_inclusive": 5.95,
+    "upper_exclusive": 6.05,
+    "count": 16,
+    "provisional": 16
+  },
+  {
+    "id": "052",
+    "label": "052 | 6.05–6.15",
+    "lower_inclusive": 6.05,
+    "upper_exclusive": 6.15,
+    "count": 16,
+    "provisional": 16
+  },
+  {
+    "id": "053",
+    "label": "053 | 6.15–6.25",
+    "lower_inclusive": 6.15,
+    "upper_exclusive": 6.25,
+    "count": 15,
+    "provisional": 15
+  },
+  {
+    "id": "054",
+    "label": "054 | 6.25–6.40",
+    "lower_inclusive": 6.25,
+    "upper_exclusive": 6.4,
+    "count": 19,
+    "provisional": 19
+  },
+  {
+    "id": "055",
+    "label": "055 | 6.40–6.50",
+    "lower_inclusive": 6.4,
+    "upper_exclusive": 6.5,
+    "count": 14,
+    "provisional": 14
+  },
+  {
+    "id": "056",
+    "label": "056 | 6.50–6.70",
+    "lower_inclusive": 6.5,
+    "upper_exclusive": 6.7,
+    "count": 14,
+    "provisional": 14
+  },
+  {
+    "id": "057",
+    "label": "057 | 6.70–6.90",
+    "lower_inclusive": 6.7,
+    "upper_exclusive": 6.9,
+    "count": 16,
+    "provisional": 16
+  },
+  {
+    "id": "058",
+    "label": "058 | 6.90–7.05",
+    "lower_inclusive": 6.9,
+    "upper_exclusive": 7.05,
+    "count": 18,
+    "provisional": 18
+  },
+  {
+    "id": "059",
+    "label": "059 | 7.05–7.20",
+    "lower_inclusive": 7.05,
+    "upper_exclusive": 7.2,
+    "count": 11,
+    "provisional": 11
+  },
+  {
+    "id": "060",
+    "label": "060 | 7.20–7.35",
+    "lower_inclusive": 7.2,
+    "upper_exclusive": 7.35,
+    "count": 14,
+    "provisional": 14
+  },
+  {
+    "id": "061",
+    "label": "061 | 7.35–7.65",
+    "lower_inclusive": 7.35,
+    "upper_exclusive": 7.65,
+    "count": 15,
+    "provisional": 15
+  },
+  {
+    "id": "062",
+    "label": "062 | 7.65–7.85",
+    "lower_inclusive": 7.65,
+    "upper_exclusive": 7.85,
+    "count": 15,
+    "provisional": 15
+  },
+  {
+    "id": "063",
+    "label": "063 | 7.85–8.05",
+    "lower_inclusive": 7.85,
+    "upper_exclusive": 8.05,
+    "count": 12,
+    "provisional": 12
+  },
+  {
+    "id": "064",
+    "label": "064 | 8.05–8.40",
+    "lower_inclusive": 8.05,
+    "upper_exclusive": 8.4,
+    "count": 13,
+    "provisional": 13
+  },
+  {
+    "id": "065",
+    "label": "065 | 8.40–8.80",
+    "lower_inclusive": 8.4,
+    "upper_exclusive": 8.8,
+    "count": 14,
+    "provisional": 14
+  },
+  {
+    "id": "066",
+    "label": "066 | 8.80–9.20",
+    "lower_inclusive": 8.8,
+    "upper_exclusive": 9.2,
+    "count": 16,
+    "provisional": 16
+  },
+  {
+    "id": "067",
+    "label": "067 | 9.20–9.60",
+    "lower_inclusive": 9.2,
+    "upper_exclusive": 9.6,
+    "count": 16,
+    "provisional": 16
+  },
+  {
+    "id": "068",
+    "label": "068 | 9.60–17.70",
+    "lower_inclusive": 9.6,
+    "upper_exclusive": 17.7,
+    "count": 15,
+    "provisional": 15
+  }
+]
