@@ -79,11 +79,11 @@ def latent(p,j,t,P,J,iterations=180,variable=True):
     variance=(np.bincount(j,weights=r*r,minlength=J)+30*np.mean(r*r))/(count+30)
     return theta,mu,a,np.sqrt(variance),it+1
 
-def target_fit(theta,mu,a,p,j,y,J):
-    """98%-specific logistic calibration, with slopes/thresholds regularized
+def target_fit(theta,mu,a,p,j,y,J,target_fraction=.98):
+    """Target-specific logistic calibration, with slopes/thresholds regularized
     toward the full-score latent model. Weakly supported thresholds are provisional.
     """
-    b0=(-math.log(.02)-mu)/a
+    b0=(-math.log1p(-target_fraction)-mu)/a
     slope0=np.clip(a/0.4,0.25,8)
     x=theta[p]
     def fg(z):
@@ -97,7 +97,7 @@ def target_fit(theta,mu,a,p,j,y,J):
     fit=minimize(fg,np.r_[b0,np.log(slope0)],jac=True,method='L-BFGS-B',
                  bounds=[(-15,50)]*J+[(math.log(.1),math.log(12))]*J,
                  options={'maxiter':350,'ftol':1e-10})
-    print('98 calibration',fit.success,fit.message,flush=True)
+    print(f'{100*target_fraction:.4f}% calibration',fit.success,fit.message,flush=True)
     if not fit.success: raise RuntimeError('Calibration failed to converge: '+str(fit.message))
     return fit.x[:J],np.exp(fit.x[J:])
 

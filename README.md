@@ -1,47 +1,41 @@
-# Insane BMS 98% difficulty table
+# Insane BMS score difficulty tables
 
-A table of **1,035 Insane BMS charts**, ordered by estimated difficulty of achieving a **98% EX personal best**.
+**[Open the table selector](https://sehun-joo.github.io/bms-98-table/)**
 
-**[Browse the table](https://sehun-joo.github.io/bms-98-table/)** · **[Download the package](https://sehun-joo.github.io/bms-98-table/insane-98-ranges.zip)**
+Choose **AAA**, **MAX−**, or **98% EX** from the same page. Each goal has its own fitted difficulty ranking and value-range folders, averaging roughly 15 charts each. All three contain the same 1,035 Insane charts. Lower difficulty values are easier.
 
-**Table import URL:** `https://sehun-joo.github.io/bms-98-table/`
+| Target | Exact threshold | Game import URL |
+|---|---|---|
+| AAA | 8/9 = 88.888…% EX | https://sehun-joo.github.io/bms-98-table/aaa/ |
+| MAX− | 17/18 = 94.444…% EX | https://sehun-joo.github.io/bms-98-table/max-minus/ |
+| 98% | 98/100 EX | https://sehun-joo.github.io/bms-98-table/ |
 
-The table has **68 difficulty-range folders**, averaging **15.2 charts per folder** (9–23). Lower **D98** values are easier. D98 is a fitted player-ability threshold, not a score percentage, BPI, or original star level.
+The original root import URL still imports the 98% table. Changing the browser selector does not change a game importer's static URL. The page displays the appropriate URL and native `.bmt` download for the selected target.
 
-## Use the table
+MAX− here means the common 94.44% milestone, not beatoraja's named 26/27 target.
 
-- Open `index.html` to choose a difficulty folder, move to easier or harder ranges, or search charts. It works offline.
-- For beatoraja-compatible players, close the game, copy `insane-98-ranges.bmt` into its existing `table` directory, and restart.
-- For web table importers, host this directory and register the `index.html` URL. The page contains the standard `bmstable` header pointing to `header.json` and `data.json`.
-- `insane-98-ranges.zip` contains the complete downloadable package.
+## Downloads
 
-This repository contains chart identifiers and table metadata, **not song files**. It has not been tested inside every BMS player.
+- [All three tables and offline selector](https://sehun-joo.github.io/bms-98-table/insane-score-tables.zip)
+- [AAA native table](https://sehun-joo.github.io/bms-98-table/aaa/insane-aaa.bmt)
+- [MAX− native table](https://sehun-joo.github.io/bms-98-table/max-minus/insane-max-minus.bmt)
+- [98% native table](https://sehun-joo.github.io/bms-98-table/insane-98-ranges.bmt)
 
-## Method and limitations
+For beatoraja-compatible players, close the game, copy the desired `.bmt` into its existing `table` directory, and restart. These files have not been tested in every player. No song files are included.
 
-The ranking uses roughly **7.7 million personal bests from 35,845 players**, drawn from the May 2026 LR2IR archive. A player-adjusted score model estimates ability; a second-stage, regularized logistic model estimates each chart's 98% threshold and slope.
+## Method and limits
 
-Additional validation on held-out players found that the current model and a simpler shared-slope 98% model performed nearly identically, with a small numerical edge for the simpler model. The ranking is defensible, but is not claimed to be uniquely best.
+Roughly 7.7 million PBs from 35,845 players estimate a common scoring-ability scale. Separate regularized logistic models fit each target's achievement threshold and chart slope. AAA and MAX− were validated on held-out players and beat the tested raw-rate and full-score-curve baselines near their target. This is not a claim of universal optimality.
 
-**366 charts are provisional**, including **91 with no retained 98% achievement**. Their ranks rely more heavily on extrapolation. Repeated practice, score age, chart preference, and input-device differences are not fully corrected. Plays per player are shown as an exposure indicator, not a causal adjustment.
+See [target definitions and validation](score-targets.html), [the 98% research review](research-review.html), and the per-target JSON files. The 98% order and folders are preserved from the previous release. Its research review found a simpler threshold model nearly tied with the current one.
 
-Read [the research review](research-review.html), [installation notes](README.txt), and [player-held-out validation](validation-player-holdout.json) for details and citations.
+Practice amount, score age, chart preference, device differences, and specialist skills are not fully corrected. Provisional charts may depend on extrapolation. Plays/player is an indicator, not an equal-practice adjustment. Difficulty values are not confidence statements, score percentages, BPI, or original ★ levels.
 
-## Files and reproduction
-
-- `data.json`, `header.json`: standard BMSTable metadata.
-- `folders.json`: exact difficulty ranges and chart counts.
-- `rankings.json`: fitted difficulty, rank, identifiers, support counts, and effort indicator.
-- `insane-98-ranges.bmt`: native beatoraja-compatible table.
-- `reproduce/`: model, regrouping, review, and offline picker-check scripts.
-- `checksums.json`: checksums of the generated table package files.
-
-The source database is not included. See `README.txt` and `prior-method-notes.txt` for reproduction details. The scripts retain their original build-directory defaults; supply explicit paths where supported.
-
-## Sources and attribution
+## Sources and reproduction
 
 - [zkldi/lr2ir-dataset](https://github.com/zkldi/lr2ir-dataset): archived scores and chart metadata.
-- [Insane table manifest](https://miraiscarlet.github.io/bms/table/genocide_insane/data_insane.json): chart membership, identifiers, and source links.
-- Statistical and BPI references are linked in [the research review](research-review.html).
+- [Insane chart manifest](https://miraiscarlet.github.io/bms/table/genocide_insane/data_insane.json): chart membership, identifiers, and original links.
+- `reproduce/` contains fitting, export, and test scripts; local source database/cache files are excluded. Scripts retain their original workspace defaults.
+- `checksums.json` covers generated public files except ZIPs and itself. ZIP contents contain a corresponding checksum manifest.
 
-Original chart titles, artists, links, and identifiers are retained. No blanket license is asserted over third-party chart metadata or linked works.
+Original chart titles, artists, links, and identifiers are retained. No blanket license is asserted over third-party metadata or linked works.

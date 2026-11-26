@@ -1,0 +1,19 @@
+{
+  "thresholds": {
+    "aaa": [
+      8,
+      9
+    ],
+    "max-minus": [
+      17,
+      18
+    ],
+    "98": [
+      98,
+      100
+    ]
+  },
+  "charts_each": 1035,
+  "existing_98_order_preserved": true,
+  "cross_target_threshold_crossings": []
+}
