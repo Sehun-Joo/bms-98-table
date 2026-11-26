@@ -10,7 +10,7 @@ Choose **AAA**, **MAX−**, or **98% EX** from the same page. Each goal has its 
 | MAX− | 17/18 = 94.444…% EX | https://sehun-joo.github.io/bms-98-table/max-minus/ |
 | 98% | 98/100 EX | https://sehun-joo.github.io/bms-98-table/ |
 
-The original root import URL still imports the 98% table. Changing the browser selector does not change a game importer's static URL. The page displays the appropriate URL and native `.bmt` download for the selected target.
+The original root import URL still imports the 98% table. The three links at the top navigate to separate importable page addresses. The page displays the appropriate URL and native `.bmt` download for the selected target.
 
 MAX− here means the common 94.44% milestone, not beatoraja's named 26/27 target.
 

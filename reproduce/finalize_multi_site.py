@@ -17,7 +17,7 @@ page='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewpor
 <h2>Ranges and uncertainty</h2><p>Nearby fitted difficulty values are grouped in small value bands, then neighboring bands are combined toward 15 charts without splitting a band for a quota. Band width is selected from 0.01, 0.025 and 0.05 to put the average near 15; the original 98% folders are unchanged. Range bounds are inclusive below and exclusive above. DAAA, DMAX− and D98 are estimated ability thresholds, not EX percentages or ★ levels.</p>
 <p>For the new targets, a chart is provisional if there are fewer than 100 usable PBs, fewer than five successes or five misses, or fewer than 30 players within one ability unit of its threshold. The unchanged 98% flags use the original rule. These are support checks, not confidence intervals. Cross-target threshold crossings found: CROSSINGS. Models are fitted independently; poorly supported estimates are not automatically forced to agree.</p>
 <p>Practice amount, age of PBs, individual strengths and input devices remain potential biases. Plays/player is an aggregate indicator, not a correction. The archive does not support an equal-attempt-budget difficulty ranking or next-attempt probabilities.</p>
-<h2>Importing into a game</h2><ul><li><a href="https://sehun-joo.github.io/bms-98-table/">98% table URL</a> (unchanged)</li><li><a href="https://sehun-joo.github.io/bms-98-table/aaa/">AAA table URL</a></li><li><a href="https://sehun-joo.github.io/bms-98-table/max-minus/">MAX− table URL</a></li></ul><p>Each page supports the same selector for browsing, but its static BMSTable metadata imports its own target. The selected target’s native .bmt download is also available on the page.</p>
+<h2>Importing into a game</h2><ul><li><a href="https://sehun-joo.github.io/bms-98-table/">98% table URL</a> (unchanged)</li><li><a href="https://sehun-joo.github.io/bms-98-table/aaa/">AAA table URL</a></li><li><a href="https://sehun-joo.github.io/bms-98-table/max-minus/">MAX− table URL</a></li></ul><p>The three links at the top open separate pages. Each page’s address and static BMSTable metadata import that page’s target. The selected target’s native .bmt download is also available on the page.</p>
 <p>Source: <a href="https://github.com/zkldi/lr2ir-dataset">May 2026 LR2IR archive</a>. Original chart identities and source links are preserved. No song files are distributed.</p></html>'''
 page=page.replace('ROWS',''.join(rows)).replace('CROSSINGS',str(len(checks['cross_target_threshold_crossings'])))
 (site/'score-targets.html').write_text(page,encoding='utf-8')
@@ -33,7 +33,7 @@ Choose **AAA**, **MAX−**, or **98% EX** from the same page. Each goal has its 
 | MAX− | 17/18 = 94.444…% EX | https://sehun-joo.github.io/bms-98-table/max-minus/ |
 | 98% | 98/100 EX | https://sehun-joo.github.io/bms-98-table/ |
 
-The original root import URL still imports the 98% table. Changing the browser selector does not change a game importer's static URL. The page displays the appropriate URL and native `.bmt` download for the selected target.
+The original root import URL still imports the 98% table. The three links at the top navigate to separate importable page addresses. The page displays the appropriate URL and native `.bmt` download for the selected target.
 
 MAX− here means the common 94.44% milestone, not beatoraja's named 26/27 target.
 

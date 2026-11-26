@@ -2,12 +2,12 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const base='work/publish/bms-98-table/';
 class Element{constructor(){this.children=[];this.value='';this.textContent='';this.disabled=false;this.handlers={};}replaceChildren(...x){this.children=x;}append(...x){this.children.push(...x);}addEventListener(k,f){this.handlers[k]=f;}}
 const ids=['target','folder','search','previous','next','folder-total','average','size-range','definition','difficulty-label','achievement-label','native','validation','notes','import-url','caution','rows','range','count'];
-function run(path,initial){const page=fs.readFileSync(base+path,'utf8'),elements=Object.fromEntries(ids.map(id=>[id,new Element()]));const document={getElementById:k=>elements[k],createElement:()=>new Element()};vm.runInNewContext(page.match(/<script>([\s\S]*?)<\/script>/)[1],{document});assert.equal(elements.target.value,initial);return elements;}
-const ui=run('index.html','98');let checked=0;
+function run(path,initial){const page=fs.readFileSync(base+path,'utf8'),elements=Object.fromEntries(ids.map(id=>[id,new Element()]));const document={getElementById:k=>elements[k],createElement:()=>new Element()};vm.runInNewContext(page.match(/<script>([\s\S]*?)<\/script>/)[1],{document});assert.ok(!page.includes('<select id="target">'));assert.equal((page.match(/aria-current="page"/g)||[]).length,1);return elements;}
+let checked=0;
 for(const [target,folderpath,threshold] of [['98','','98/100'],['aaa','aaa/','8/9'],['max-minus','max-minus/','17/18']]){
  const folders=JSON.parse(fs.readFileSync(base+folderpath+'folders.json','utf8'));
  const rankings=JSON.parse(fs.readFileSync(base+folderpath+'rankings.json','utf8'));
- ui.target.value=target;ui.target.handlers.change();assert.ok(ui.definition.textContent.includes(threshold));
+ const ui=run(folderpath+'index.html',target);assert.ok(ui.definition.textContent.includes(threshold));
  assert.equal(ui.folder.value,'001');assert.equal(ui.rows.children.length,folders[0].count);assert.equal(ui.previous.disabled,true);
  assert.equal(ui['import-url'].href,'https://sehun-joo.github.io/bms-98-table/'+folderpath);
  ui.next.onclick();assert.equal(ui.folder.value,'002');ui.previous.onclick();assert.equal(ui.folder.value,'001');
